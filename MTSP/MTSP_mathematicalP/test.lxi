@@ -1,0 +1,15 @@
+B 3 C o m p i l a t i o n
+B 87 Equation Listing    SOLVE project Using MIP From line 76
+D 90 eq1
+D 95 eq2
+D 106 eq4
+D 117 eq3
+D 128 start
+D 133 end
+B 139 Column Listing      SOLVE project Using MIP From line 76
+E 142 x
+E 165 F
+E 172 u
+B 354 Range Statistics    SOLVE project Using MIP From line 76
+B 365 Model Statistics    SOLVE project Using MIP From line 76
+B 378 Solution Report     SOLVE project Using MIP From line 76

@@ -1,0 +1,24 @@
+B 3 C o m p i l a t i o n
+B 119 Equation Listing    SOLVE mtsp Using MIP From line 108
+D 122 start
+D 127 end
+D 132 assign1
+D 143 assign2
+D 154 sec
+D 165 cost
+B 171 Column Listing      SOLVE mtsp Using MIP From line 108
+E 174 x
+E 196 u
+E 371 z
+B 379 Range Statistics    SOLVE mtsp Using MIP From line 108
+B 390 Model Statistics    SOLVE mtsp Using MIP From line 108
+B 403 Solution Report     SOLVE mtsp Using MIP From line 108
+F 450 start
+F 451 end
+F 453 assign1
+F 486 assign2
+F 519 sec
+F 1282 cost
+G 1284 x
+G 2101 u
+G 2136 z

@@ -1,0 +1,175 @@
+
+--- Job MTSP_gams.gms Start 11/29/23 16:38:22 45.2.0 e4d2ee31 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\45\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\kasha\OneDrive\Desktop\project\MTSP\MTSP_mathematicalP\MTSP_gams.gms
+    PageSize 0
+    ScrDir C:\Users\kasha\OneDrive\Desktop\project\MTSP\MTSP_mathematicalP\225a\
+    SysDir C:\GAMS\45\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: GAMS Demo, for EULA and demo limitations see   G230930/0001CB-GEN
+          https://www.gams.com/latest/docs/UG%5FLicense.html         DC0000
+          C:\GAMS\45\gamslice.txt
+          Demo license for demonstration and instructional purposes only
+Processor information: 1 socket(s), 4 core(s), and 8 thread(s) available
+GAMS 45.2.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- MTSP_gams.gms(108) 3 Mb
+--- Starting execution: elapsed 0:00:00.010
+--- MTSP_gams.gms(105) 4 Mb
+--- Generating MIP model mtsp
+--- MTSP_gams.gms(108) 4 Mb
+---   815 rows  841 columns  4,705 non-zeroes
+---   812 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.000E+00, 2.800E+01] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 1.000E+00] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E+00, 3.860E+02]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.030
+
+IBM ILOG CPLEX   45.2.0 e4d2ee31 Oct 30, 2023          WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.03 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.69 Mb (peak 0.70 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.1.0 link memory 0.03 Mb (peak 0.12 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Simplex_Limits_Iterations               10000000
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x50
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 1 columns.
+Reduced MIP has 814 rows, 840 columns, and 3892 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.06 ticks)
+Probing time = 0.02 sec. (2.53 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 814 rows, 840 columns, and 3892 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.78 ticks)
+Probing time = 0.00 sec. (2.53 ticks)
+Clique table members: 434.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.42 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =           440.000000
+Iteration:    71   Dual objective     =          1688.655172
+Root relaxation solution time = 0.00 sec. (1.55 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0     1689.2414    57                   1689.2414       80         
+      0     0     1723.3103    50                    Cuts: 81      138         
+      0     0     1741.0000    52                    Cuts: 57      175         
+      0     0     1741.1293    50                    Cuts: 57      198         
+      0     0     1745.0000    56                    Cuts: 36      236         
+      0     0     1745.5000    52                    Cuts: 54      266         
+Detecting symmetries...
+      0     0     1745.5000    52                     Cuts: 9      272         
+*     0+    0                         5136.0000     1745.5000            66.01%
+Found incumbent of value 5136.000000 after 0.14 sec. (129.98 ticks)
+*     0+    0                         2317.0000     1745.5000            24.67%
+Found incumbent of value 2317.000000 after 0.23 sec. (204.87 ticks)
+      0     0  -1.00000e+75     0     2317.0000     1745.5000      272   24.67%
+Detecting symmetries...
+      0     2     1745.5000    26     2317.0000     1746.5000      272   24.62%
+Elapsed time = 0.25 sec. (206.30 ticks, tree = 0.01 MB)
+*    38    30      integral     0     1985.0000     1748.0000      751   11.94%
+Found incumbent of value 1985.000000 after 0.27 sec. (232.93 ticks)
+*    62    39      integral     0     1864.0000     1748.0000     1151    6.22%
+                                                     Cuts: 10                  
+Found incumbent of value 1864.000000 after 0.28 sec. (264.41 ticks)
+*   133    73      integral     0     1861.0000     1752.5172     2041    5.83%
+                                                     Cuts: 17                  
+Found incumbent of value 1861.000000 after 0.34 sec. (326.12 ticks)
+*   173    43      integral     0     1811.0000     1754.4138     2527    3.12%
+                                                      Cuts: 9                  
+Found incumbent of value 1811.000000 after 0.38 sec. (358.57 ticks)
+*   223    48      integral     0     1807.0000     1773.3333     3339    1.86%
+                                                      Cuts: 4                  
+Found incumbent of value 1807.000000 after 0.42 sec. (405.99 ticks)
+    276    71     1780.5172    24     1807.0000     1775.1724     3857    1.76%
+                                                     Cuts: 10                  
+*   418    93      integral     0     1805.0000     1783.6379     5431    1.18%
+                                                     Cuts: 21                  
+Found incumbent of value 1805.000000 after 0.59 sec. (570.61 ticks)
+*   484    30      integral     0     1792.0000     1786.3750     6252    0.31%
+                                                     Cuts: 12                  
+Found incumbent of value 1792.000000 after 0.67 sec. (634.93 ticks)
+
+Clique cuts applied:  11
+Cover cuts applied:  8
+Implied bound cuts applied:  53
+Flow cuts applied:  24
+Mixed integer rounding cuts applied:  16
+Zero-half cuts applied:  3
+Multi commodity flow cuts applied:  16
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =    0.25 sec. (206.29 ticks)
+Sequential b&c:
+  Real time             =    0.44 sec. (444.33 ticks)
+                          ------------
+Total (root+branch&cut) =    0.69 sec. (650.62 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.69sec (det. 650.62 ticks)
+
+--- Returning a primal only solution to GAMS (marginals all set to NA).
+--- Fixing integer variables and solving final LP...
+
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_Simplex_Limits_Iterations               10000000
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Tried aggregator 1 time.
+LP Presolve eliminated 58 rows and 813 columns.
+Reduced LP has 756 rows, 28 columns, and 1512 nonzeros.
+Presolve time = 0.00 sec. (0.86 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          1792.000000
+
+--- Fixed MIP status (1): optimal.
+--- Cplex Time: 0.00sec (det. 1.96 ticks)
+
+
+Proven optimal solution
+MIP Solution:         1792.000000    (6457 iterations, 514 nodes)
+Final Solve:          1792.000000    (24 iterations)
+
+Best possible:        1792.000000
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model mtsp
+*** Status: Normal completion
+--- Job MTSP_gams.gms Stop 11/29/23 16:38:23 elapsed 0:00:00.780

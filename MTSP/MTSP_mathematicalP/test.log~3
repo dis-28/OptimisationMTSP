@@ -1,0 +1,230 @@
+--- Job test.gms Start 11/29/23 08:46:28 45.2.0 e4d2ee31 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\45\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\kasha\OneDrive\Desktop\project\MTSP\MTSP_mathematicalP\test.gms
+    PageSize 0
+    ScrDir C:\Users\kasha\OneDrive\Desktop\project\MTSP\MTSP_mathematicalP\225a\
+    SysDir C:\GAMS\45\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: GAMS Demo, for EULA and demo limitations see   G230930/0001CB-GEN
+          https://www.gams.com/latest/docs/UG%5FLicense.html         DC0000
+          C:\GAMS\45\gamslice.txt
+          Demo license for demonstration and instructional purposes only
+Processor information: 1 socket(s), 4 core(s), and 8 thread(s) available
+GAMS 45.2.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- test.gms(76) 3 Mb
+--- Starting execution: elapsed 0:00:00.018
+--- test.gms(47) 4 Mb
+--- Generating MIP model project
+--- test.gms(76) 5 Mb
+---   900 rows  871 columns  4,930 non-zeroes
+---   841 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.000E+00, 2.700E+01] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 1.000E+00] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E+00, 7.720E+02]
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.047
+
+IBM ILOG CPLEX   45.2.0 e4d2ee31 Oct 30, 2023          WEI x86 64bit/MS Window
+
+*** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.03 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.70 Mb (peak 0.71 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.1.0 link memory 0.03 Mb (peak 0.12 Mb)
+--- Starting Cplex
+
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Generic callback                                 0x50
+Tried aggregator 1 time.
+MIP Presolve eliminated 29 rows and 30 columns.
+Reduced MIP has 870 rows, 841 columns, and 4060 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.20 ticks)
+Probing time = 0.00 sec. (2.53 ticks)
+Cover probing fixed 0 vars, tightened 29 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 870 rows, 841 columns, and 4060 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (2.80 ticks)
+Probing time = 0.00 sec. (2.53 ticks)
+Cover probing fixed 0 vars, tightened 29 bounds.
+Clique table members: 464.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.43 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          2198.000000
+Root relaxation solution time = 0.01 sec. (1.78 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0     2598.8571    61                   2598.8571       78         
+      0     0     2734.0000    60                    Cuts: 97      158         
+      0     0     2734.7500    63                    Cuts: 91      195         
+      0     0     2741.0000    62                    Cuts: 75      220         
+      0     0     2746.0000    52                    Cuts: 17      231         
+      0     0     2748.0000    61                    Cuts: 21      246         
+Detecting symmetries...
+      0     0     2762.0000    58                    Cuts: 64      295         
+      0     0     2762.0000    58                    Cuts: 64      305         
+      0     0     2762.0000    58                     Cuts: 7      306         
+Detecting symmetries...
+      0     2     2762.0000    58                   2762.0000      306         
+Elapsed time = 0.44 sec. (368.13 ticks, tree = 0.01 MB)
+    230   207     2770.9667    27                   2762.8719     3319         
+                                                      Cuts: 5                  
+    495   441     3268.7286    11                   2763.5536     6575         
+                                                     Cuts: 15                  
+    797   686     2784.3768    56                   2766.5143    10087         
+                                                     Cuts: 10                  
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 870 rows, 841 columns, and 4060 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.13 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 870 rows, 841 columns, and 4060 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.84 ticks)
+Represolve time = 0.02 sec. (13.92 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 21 rows and 0 columns.
+Reduced LP has 906 rows, 841 columns, and 4952 nonzeros.
+Presolve time = 0.00 sec. (0.63 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          2198.000000
+Iteration:    83   Dual objective     =          2756.000000
+Initializing dual steep norms . . .
+    990     0     2762.0618    65                   Cuts: 107    12735         
+    990     0     2763.0000    64                    Cuts: 46    12759         
+    990     0     2765.0000    66                    Cuts: 62    12788         
+    990     0     2765.0000    62                   Cuts: 113    12831         
+    990     0     2765.0000    67                    Cuts: 90    12887         
+    990     0     2766.0000    58                    Cuts: 10    12918         
+    990     0     2766.0000    58                   Cuts: 112    12960         
+    990     0     2766.0000    55                    Cuts: 18    12995         
+    990     2     2766.0000     6                   2768.0000    12995         
+   1023    35     2784.2143    16                   2768.0000    13522         
+   1106   116     3129.4286    12                   2768.0000    14104         
+   1204   201     2824.0357     9                   2768.0000    14570         
+   1280   277     2901.7540    31                   2768.0000    15088         
+   1385   382     2952.7143    21                   2768.0000    15365         
+
+Performing restart 2
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 870 rows, 841 columns, and 4060 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.13 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 870 rows, 841 columns, and 4060 nonzeros.
+Reduced MIP has 812 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.84 ticks)
+Represolve time = 0.03 sec. (17.22 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 0 columns.
+Reduced LP has 888 rows, 841 columns, and 5339 nonzeros.
+Presolve time = 0.00 sec. (0.63 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          2198.000000
+Initializing dual steep norms . . .
+   1980     0     2766.0000    64                   Cuts: 117    18699         
+   1980     0     2766.0000    61                    Cuts: 23    18740         
+   1980     0     2766.0000    61                   Cuts: 127    18800         
+   1980     0     2766.0000    61                     Cuts: 3    18815         
+   1980     2     2766.0000     6                   2768.0000    18815         
+Elapsed time = 4.97 sec. (5269.60 ticks, tree = 0.01 MB)
+   2226   234     2772.9107    24                   2768.0000    20951         
+   2480   468     2830.3571    18                   2768.0000    22356         
+                                                      Cuts: 6                  
+   2795   773     4682.8214     9                   2768.0000    24023         
+   3165  1112     3427.8571    13                   2768.0000    26374         
+                                                      Cuts: 5                  
+   3596  1499     2956.1508    18                   2768.0000    29538         
+                                                      Cuts: 3                  
+   4057  1932     2875.8701    21                   2768.0000    31861         
+                                                      Cuts: 6                  
+   4486  2336     2914.4821    18                   2768.0000    34402         
+                                                      Cuts: 6                  
+   5008  2839     2898.6667    24                   2768.9911    37136         
+                                                      Cuts: 9                  
+   5633  3442     2991.8393     8                   2769.3297    40410         
+                                                      Cuts: 5                  
+   6366  4144     2800.7857    14                   2769.8682    44382         
+Elapsed time = 11.75 sec. (14818.39 ticks, tree = 2.69 MB)
+   7180  4929     2847.5508    36                   2770.0000    48374         
+   8053  5768     2823.7222    50                   2770.5000    52862         
+   9180  6860     3118.5714    10                   2771.6000    57707         
+  10565  8203     2829.4196    36                   2772.3333    63800         
+                                                      Cuts: 5                  
+  12078  9663     4401.7778    10                   2773.3214    70850         
+                                                      Cuts: 4                  
+  13695 11234     2861.9286    13                   2774.0714    78048         
+                                                     Cuts: 11                  
+  14852 12354     2948.7059    25                   2775.2000    83214         
+  16069 13537     3582.5258    27                   2776.3214    88713         
+                                                      Cuts: 5                  
+  17528 14967     2821.5000    23                   2777.0714    93924         
+                                                      Cuts: 4                  
+  19141 16539     2818.7857    27                   2777.7143   102387         
+                                                      Cuts: 5                  
+Elapsed time = 19.50 sec. (24370.38 ticks, tree = 10.66 MB)
+  20748 18099     3022.1770    19                   2778.5000   110794         
+                                                      Cuts: 2                  
+  22514 19822     3206.2143    20                   2780.0000   118694         
+  24263 21515     2967.7143    16                   2780.0000   127016         
+  25883 23082     3055.5714    28                   2780.0476   135511         
+  27497 24655     2808.3367    21                   2780.5714   142911         
+
+Clique cuts applied:  12
+Cover cuts applied:  31
+Mixed integer rounding cuts applied:  30
+Zero-half cuts applied:  2
+Multi commodity flow cuts applied:  9
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.44 sec. (368.13 ticks)
+Sequential b&c:
+  Real time             =   23.75 sec. (29443.33 ticks)
+                          ------------
+Total (root+branch&cut) =   24.19 sec. (29811.46 ticks)
+
+--- MIP status (114): aborted, no integer solution.
+--- Cplex Time: 24.19sec (det. 29811.46 ticks)
+
+CPLEX Error  1217: No solution exists.
+--- Problem aborted, no integer solution found
+--- Reading solution for model project
+*** Status: Normal completion
+--- Job test.gms Stop 11/29/23 08:46:52 elapsed 0:00:24.354
